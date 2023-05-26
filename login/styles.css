@@ -1,0 +1,85 @@
+body{
+    background-color: #291C45;
+}
+
+h2{
+    color: #82C4AA;
+    text-align: center;
+}
+
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+
+  }
+
+  
+  
+
+  .registerButton {
+    background-color:#96E5C3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .play{
+    size: 2px;
+  }
+  
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1%;
+    list-style-type: none;
+    color: white;
+  }
+
+  .registro{
+    color: #82C4AA;
+  }
+
+  p{
+    color: white;
+}
+  
+
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+
+  img.logo {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+
+  .container {
+    padding: 16px;
+  }
+  
+  
