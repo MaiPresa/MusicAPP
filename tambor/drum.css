@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: #191227;
     margin: 0;
 }
 .DrumContainer {
@@ -7,20 +7,16 @@ body {
     align-items: center;
     flex-direction: column;
     height: 410px;
-    background-color: crimson;
 }
 .CymbalsContainer { /*contiene todos los cymbals*/
     display: flex;
     justify-content: space-between;
     height: 110px;
-    width: 303px;
-    background-color: burlywood;
-    
+    width: 303px; 
 }
 .CymbalsDown{
     margin-top: 18px;
 }
-
 .Cymbals {
     display: flex;
     align-items: center;
@@ -82,12 +78,55 @@ body {
     margin-left: 3px;
 }
 .SmallDrumsContainer {
-    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
     width: 196px;
-    background-color: blueviolet;
+}
+.SmallDrum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #291C45;
+    width: 80px;
+    height: 80px;
+}
+.SmallDrumCenter {
+    height: 47.2px;
+    width: 47.2px;
+    background-color: #191227;
+}
+.DrumBorderMedium {
+    border-radius: 50%;
+    border: 3px solid #0CEF8B;
 }
 .BigDrumsContainer {
-    height: 162px;
-    width: 306px;
-    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    width: 330px;
+}
+.BigDrum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #291C45;
+}
+.DrumbBigDown {
+    margin-top: 30px;
+}
+.BigDrumCenter {
+    width: 71px;
+    height: 71px;
+    background-color: #191227;
+}
+.MainDrum {
+    width: 100px;
+    height: 100px;
+    background-color: #291C45;
+}
+.DrumbMainDown {
+    margin-top: 70px;
 }
