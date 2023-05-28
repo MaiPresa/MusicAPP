@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191227;
+}
+
+header {
+    height: 238px;
+}
+
+main {
+    color: white;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ----- TEXT STYLES ----- */
+
+.homeTitles {
+    color: #96E5C3;
+    font-weight: 100;
+}
+
+.homeTextCenter {
+    text-align: center;
+}
+
+.homeTextRight {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.homeTextLeft {
+    text-align: left;
+    flex-grow: 1;
+}
+
+
+
+/* ----- CONTAINER STYLES ----- */
+
+.homeFlex {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 16px;
+}
+
+.homeGreenContainer {
+    border: solid 2px #0CEF8B;
+}
+
+.homeContainerNoneR {
+    border-right: none;
+}
+
+.homeContainerNoneL {
+    border-left: none;
+}
+
+.homePaddingL {
+    padding-left: 16px;
+}
+
+.homePaddingR {
+    padding-right: 16px;
+}
+
+.homeContainerOrder {
+    order: 2;
+}
+
+.homeMarginTop {
+    margin-top: 40px;
+}
+
+.homeMarginBottom {
+    margin-bottom: 80px;
+}
+
+
+/* ----- IMG STYLES ----- */
+
+img[src*="bateria"], img[src*="piano"] {
+    max-width: 141px;
+    max-height: 141px;
+    width: 100%;
+}
+
+.homeFlex:hover img[src*="bateria"], .homeFlex:hover img[src*="piano"] {
+    filter: saturate(0%) brightness(200%);
+}
+
+
+
+/* ----- MEDIA QUERY ----- */
+@media (max-width: 304px) {
+    .homeFlex {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 375px) {
+    img[src*="bateria"], img[src*="piano"] {
+        max-width: none;
+        max-height: 141px;
+        width: auto;
+        flex-grow: 1;
+    }
+}
