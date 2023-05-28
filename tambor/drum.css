@@ -10,10 +10,17 @@ body {
     background-color: crimson;
 }
 .CymbalsContainer { /*contiene todos los cymbals*/
-    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
     width: 303px;
     background-color: burlywood;
+    
 }
+.CymbalsDown{
+    margin-top: 18px;
+}
+
 .Cymbals {
     display: flex;
     align-items: center;
