@@ -1,12 +1,16 @@
 body {
-    background-color: #191227;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
+    background-color: #191227;
 }
 .DrumContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 410px;
+    margin-top: 110px;
 }
 .CymbalsContainer { /*contiene todos los cymbals*/
     display: flex;
@@ -34,6 +38,14 @@ body {
     border-radius: 50%;
     border: 6px solid #0CEF8B;
 }
+.DrumBorder:hover {
+    border-color: #ffffff;
+
+}
+.DrumBorder:hover > .DrumBorderMedium {
+    border-color: #ffffff;
+}
+
 .ondas1{
     display: flex;
     justify-content: center;
@@ -49,6 +61,7 @@ body {
     border-bottom: #0CEF8B solid;
     margin-left: 2px;
     transform: rotate(40deg);
+    margin-left: 5px;
 }
 .ondas2 {
     display: flex;
@@ -74,7 +87,6 @@ body {
     height: 31.2px;  
     border-radius: 50%;
     background-color: #0CEF8B;
-    position: absolute;
     margin-left: 3px;
 }
 .SmallDrumsContainer {
@@ -129,4 +141,23 @@ body {
 }
 .DrumbMainDown {
     margin-top: 70px;
+}
+.LogoDrum {
+    margin-top: 20px;
+}
+
+.Cymbals:hover > * {
+    border-left: #ffffff solid;
+    border-bottom: #ffffff solid;
+}
+  .Cymbals:hover > * > *{
+    border-left: #ffffff solid;
+    border-bottom: #ffffff solid;
+}  
+  .Cymbals:hover > * > * > *{
+    border-left: #ffffff solid;
+    border-bottom: #ffffff solid;
+}
+.Cymbals:hover .CymbalsMedium {
+    background-color: #ffffff; 
 }
