@@ -161,3 +161,19 @@ body {
 .Cymbals:hover .CymbalsMedium {
     background-color: #ffffff; 
 }
+@media (min-width: 376px) and (orientation: landscape) {
+    .DrumContainer {
+        margin-top: 20px;
+        margin-left: 145px;
+        width: 370px;
+        height: 140px;
+
+    }
+    .DrumbMainDown {
+        margin-top: 30px;
+    }
+    .LogoDrum {
+        display: none;
+    }
+
+}
