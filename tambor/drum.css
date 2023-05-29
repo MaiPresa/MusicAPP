@@ -10,23 +10,13 @@ body {
     align-items: center;
     flex-direction: column;
     height: 410px;
-    margin-top: 230px;
+    margin-top: 110px;
 }
-.lettersDrums {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:sans-serif;
-    font-size:20px;
-    color: #ffffff;
-}
-
 .CymbalsContainer { /*contiene todos los cymbals*/
     display: flex;
     justify-content: space-between;
     height: 110px;
     width: 303px; 
-    text-align: center;
 }
 .CymbalsDown{
     margin-top: 18px;
@@ -114,7 +104,6 @@ body {
     height: 80px;
 }
 .SmallDrumCenter {
-    display: flex;
     height: 47.2px;
     width: 47.2px;
     background-color: #191227;
@@ -154,9 +143,9 @@ body {
     margin-top: 70px;
 }
 .LogoDrum {
-    margin-top: 0;
+    margin-top: 20px;
 }
-/*Hover de los discos*/
+
 .Cymbals:hover > * {
     border-left: #ffffff solid;
     border-bottom: #ffffff solid;
@@ -174,19 +163,17 @@ body {
 }
 @media (min-width: 376px) and (orientation: landscape) {
     .DrumContainer {
-        margin-top: 0px;
+        margin-top: 20px;
         margin-left: 145px;
         width: 370px;
         height: 140px;
+
     }
-    .BigDrumsContainer {
-    display: flex;
-    justify-content: space-between;
-    height: 180px;
-    width: 370px;
+    .DrumbMainDown {
+        margin-top: 30px;
     }
-    .MainDrum {
-    margin-top: 40px;
+    .LogoDrum {
+        display: none;
     }
 
 }
