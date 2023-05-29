@@ -1,0 +1,179 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #191227;
+}
+.DrumContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 410px;
+    margin-top: 110px;
+}
+.CymbalsContainer { /*contiene todos los cymbals*/
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 303px; 
+}
+.CymbalsDown{
+    margin-top: 18px;
+}
+.Cymbals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 81.82px;
+    height: 80px;
+    border: 5px solid #0CEF8B;
+    background-color: #291C45;
+    transform: rotate(-23deg);
+}
+.DrumBorder { /* aporta color, tamaño y borde de los elementos de la batería en todo DrumContainer*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 6px solid #0CEF8B;
+}
+.DrumBorder:hover {
+    border-color: #ffffff;
+
+}
+.DrumBorder:hover > .DrumBorderMedium {
+    border-color: #ffffff;
+}
+
+.ondas1{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    opacity: 50%;
+}
+.ondas1border {/*aporta el color, borde de las ondas de los cymbals*/
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left: #0CEF8B solid;
+    border-bottom: #0CEF8B solid;
+    margin-left: 2px;
+    transform: rotate(40deg);
+    margin-left: 5px;
+}
+.ondas2 {
+    display: flex;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid transparent;
+    border-left: #0CEF8B solid;
+    border-bottom: #0CEF8B solid;
+}
+.ondas3 {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid transparent;
+    border-left: #0CEF8B solid;
+    border-bottom: #0CEF8B solid;
+}   
+.CymbalsMedium {
+    width: 31.91px;
+    height: 31.2px;  
+    border-radius: 50%;
+    background-color: #0CEF8B;
+    margin-left: 3px;
+}
+.SmallDrumsContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    width: 196px;
+}
+.SmallDrum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #291C45;
+    width: 80px;
+    height: 80px;
+}
+.SmallDrumCenter {
+    height: 47.2px;
+    width: 47.2px;
+    background-color: #191227;
+}
+.DrumBorderMedium {
+    border-radius: 50%;
+    border: 3px solid #0CEF8B;
+}
+.BigDrumsContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    width: 330px;
+}
+.BigDrum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #291C45;
+}
+.DrumbBigDown {
+    margin-top: 30px;
+}
+.BigDrumCenter {
+    width: 71px;
+    height: 71px;
+    background-color: #191227;
+}
+.MainDrum {
+    width: 100px;
+    height: 100px;
+    background-color: #291C45;
+}
+.DrumbMainDown {
+    margin-top: 70px;
+}
+.LogoDrum {
+    margin-top: 20px;
+}
+
+.Cymbals:hover > * {
+    border-left: #ffffff solid;
+    border-bottom: #ffffff solid;
+}
+  .Cymbals:hover > * > *{
+    border-left: #ffffff solid;
+    border-bottom: #ffffff solid;
+}  
+  .Cymbals:hover > * > * > *{
+    border-left: #ffffff solid;
+    border-bottom: #ffffff solid;
+}
+.Cymbals:hover .CymbalsMedium {
+    background-color: #ffffff; 
+}
+@media (min-width: 376px) and (orientation: landscape) {
+    .DrumContainer {
+        margin-top: 20px;
+        margin-left: 145px;
+        width: 370px;
+        height: 140px;
+
+    }
+    .DrumbMainDown {
+        margin-top: 30px;
+    }
+    .LogoDrum {
+        display: none;
+    }
+
+}
