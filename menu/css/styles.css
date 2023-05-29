@@ -10,6 +10,7 @@ header {
     flex-flow: column wrap;
     align-items: center;
     padding-top: 45px;
+    position: fixed;
 }
 
 header img#logo {
