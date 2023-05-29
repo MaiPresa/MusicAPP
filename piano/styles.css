@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #191227;
+  /* background-image: linear-gradient( #191227 60%, 
+  #122938, #1B8367, #0CEF8B); */
+}
+
+main {margin-bottom: 40px;}
+
+.keyboardContainer {
+  width: 460px;
+  background-color: #191227;
+  border-radius: 15px;
+  border-color: #0CEF8B;
+  border-style: solid;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.keys {
+  position: relative;
+  cursor: pointer;
+}
+
+.whitekeys,
+.blackkeys {
+  display: flex;
+  cursor: pointer;
+}
+
+.whitekey {
+  width: 65px;
+  height: 350px;
+  background-color: #534967d5;
+  border: 2px solid #0CEF8B;
+  margin-right: 0;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 5px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.whitekey:first-child {
+  border-radius: 8.5px 0 0 8.5px;
+}
+.whitekey:last-child {
+  border-radius: 0 8.5px 8.5px 0;
+}
+.whitekey:hover {
+  background-color: #fffffdb4;
+  border-color: #fffffd59;
+}
+
+.blackkey {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 45px;
+  height: 210px;
+  background-color: #0CEF8B;
+  border-radius: 0 0 5px 5px;
+ 
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  color: white;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+.blackkey:hover {
+  background-color: #fffffd;
+  border-color: #fffffd;
+}
+/* Posición de las teclas negras */
+.blackkey:nth-child(1) {left: 38px;}
+
+.blackkey:nth-child(2) {left: 113px;}
+
+.blackkey:nth-child(3) {left: 233px;}
+
+.blackkey:nth-child(4) {left: 302px;}
+
+.blackkey:nth-child(5) {left: 372px;}
+
+.hideText {font-size: 0;}
+
+.imgDomboom {
+  display: flex;
+  justify-content: center;
+}
+
+/* Medidas responsive 1- móvil 2- tablet 3- Pc */
+
+/* medida móvil */
+@media (min-width: 375px) and (max-width: 768px) {
+  .keyboardContainer {
+    width: 342px;
+  }
+  .whitekey {
+      width: 48px;
+      height: 256.5px;
+      font-size: 20px;
+  }
+  .blackkey {
+      width: 33px;
+      height: 153px;
+      border-radius: 0 0 2px 2px;
+
+      padding-top: 10px;
+      font-size: 20px;
+  }
+  .blackkey:nth-child(1) {left: 27px;}
+  
+  .blackkey:nth-child(2) {left: 82px;}
+  
+  .blackkey:nth-child(3) {left: 172px;}
+  
+  .blackkey:nth-child(4) {left: 223px;}
+  
+  .blackkey:nth-child(5) {left: 275px;}
+}
+
+@media (min-width: 375px) and (orientation: landscape) {
+  .keyboardContainer {
+    margin-left: 145px;
+    margin-bottom: 70px;
+  }
+}
+
+/* medida táblet 
+@media (min-width: 770px){.imgDomboom {visibility: hidden;}}
+*/
+
+@media (min-width: 769px) and (max-width: 927px){
+  .borderPiano {
+      width: 540px;
+  }
+  .whitekey {
+      width: 65px;
+      height: 350px;
+  }
+  .blackkey {
+      width: 45px;
+      height: 210px;
+  }
+}
+
+/* medida pc */
+@media (min-width: 928px) {
+  .keyboardContainer {
+    width: 670px;
+    border-radius: 30px;
+  }
+  .whitekey {
+      width: 100px;
+      height: 500px;
+
+      padding-bottom: 15px;
+      font-size: 25px;
+  }
+  .whitekey:first-child {border-radius: 20px 0 0 20px;}
+  .whitekey:last-child {border-radius: 0 20px 20px 0;}
+  .blackkey {
+      width: 60px;
+      height: 300px;
+      border-radius: 0 0 5px 5px;
+
+      padding-top: 15px;
+      font-size: 25px;
+  }
+  .blackkey:nth-child(1) {left: 50px;}
+  
+  .blackkey:nth-child(2) {left: 165px;}
+  
+  .blackkey:nth-child(3) {left: 335px;}
+  
+  .blackkey:nth-child(4) {left: 440px;}
+  
+  .blackkey:nth-child(5) {left: 545px;}
+}
