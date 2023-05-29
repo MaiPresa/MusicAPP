@@ -87,6 +87,25 @@ header nav#navigation ul li button:hover {
     border: #FFFFFF 1px solid;
 }
 
+@media screen and (max-width:767px){
+    header.shrink {
+        animation: shrinkNavbar 0.4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    header img#logo.shrink,  header div:nth-of-type(1).shrink, header div:nth-of-type(3).shrink {
+        animation: disappearNavbar 0.4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    header nav#navigation ul.shrink {
+        animation: disappearBorder 0.4s ease-in-out;
+        animation-fill-mode: forwards
+    }
+    header div:nth-of-type(2).shrink {
+        animation: adjustWidth 0.4s ease-in-out;
+        animation-fill-mode: forwards
+    }
+}
+
 @media screen and (orientation: landscape) and (max-width:767px){
     header {
         width: 136px;
@@ -153,4 +172,46 @@ header nav#navigation ul li button:hover {
     }
 
     
+}
+
+@keyframes shrinkNavbar{
+    0%{
+        padding-top: 45px;
+    }
+    100%{
+        padding-top: 0;
+    }
+}
+
+@keyframes disappearNavbar{
+    0%{
+        opacity:100%;
+        transform: scale(1,1);
+    }
+    100%{
+        height: 0;
+        opacity: 0%;
+        transform: scale(1,0);
+    }
+}
+
+@keyframes disappearBorder{
+    0%{
+        width: 75%;
+    }
+    100%{
+        border-right:none;
+        border-left:none;
+    }
+}
+
+@keyframes adjustWidth {
+    0%{
+        margin: 0 10% 0 15%;
+    }
+    100%{
+        margin: 0 10% 0 10%;
+        border-right:none;
+        border-left:none;
+    }
 }

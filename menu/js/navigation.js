@@ -1,4 +1,3 @@
-
 navigation = {
     build: function(){
         //cojo el elemento header
@@ -44,7 +43,28 @@ navigation = {
         header.appendChild(thirdDecorativeNavBox);
 
     },
-    
-};
+    shrink: function(){
+        let header = document.querySelector('header');
+        let logo = document.getElementById('logo');
+        let div = document.querySelectorAll('header > div');
+        let nav = document.querySelector('nav > ul');
 
-navigation.build()
+        header.classList.add('shrink');
+        logo.classList.add('shrink');
+        div[0].classList.add('shrink');
+        div[2].classList.add('shrink');
+        div[1].classList.add('shrink');
+        nav.classList.add('shrink');
+    },
+};
+//creamos la estructura de la página
+navigation.build();
+
+//elementos con llamada a la acción
+let pianoButton = document.getElementById("navButtonPiano");
+let drumsButton = document.getElementById("navButtonDrums");
+let userButton = document.getElementById("navButtonUser");
+
+pianoButton.addEventListener('click',navigation.shrink);
+drumsButton.addEventListener('click',navigation.shrink);
+
