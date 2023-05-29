@@ -1,8 +1,7 @@
+let header = document.querySelector('header');
+
 navigation = {
     build: function(){
-        //cojo el elemento header
-        let header = document.querySelector('header');
-
         //creo el link y logo, y lo inserto
         let logo = document.createElement('img');
         logo.src = 'img/logo.svg';
@@ -56,6 +55,33 @@ navigation = {
         div[1].classList.add('shrink');
         nav.classList.add('shrink');
     },
+    displayPiano: function(){
+        navigation.shrink();
+        let btnHover = document.querySelectorAll('nav > ul > li > button');
+        let imgHover = document.querySelectorAll('nav > ul > li > button > img');
+        btnHover[1].style.border = '#0CEF8B 1px solid';
+        imgHover[1].src = 'img/navIconDrums.svg';
+        btnHover[0].style.border = '#FFFFFF 1px solid';
+        imgHover[0].src = 'img/navIconPianoHover.svg';
+
+
+        //pendiente insertar módulo piano
+    },
+    displayDrums: function(){
+        navigation.shrink();
+        let btnHover = document.querySelectorAll('nav > ul > li > button');
+        let imgHover = document.querySelectorAll('nav > ul > li > button > img');
+        btnHover[0].style.border = '#0CEF8B 1px solid';
+        imgHover[0].src = 'img/navIconPiano.svg';
+        btnHover[1].style.border = '#FFFFFF 1px solid';
+        imgHover[1].src = 'img/navIconDrumsHover.svg';
+
+
+        // pendiente insertar módulo batería
+        // let drumsContainer = document.getElementbyId('drumContainer');
+        // drumsContainer.style.display = 'block';
+    }
+
 };
 //creamos la estructura de la página
 navigation.build();
@@ -65,6 +91,5 @@ let pianoButton = document.getElementById("navButtonPiano");
 let drumsButton = document.getElementById("navButtonDrums");
 let userButton = document.getElementById("navButtonUser");
 
-pianoButton.addEventListener('click',navigation.shrink);
-drumsButton.addEventListener('click',navigation.shrink);
-
+pianoButton.addEventListener('click',navigation.displayPiano);
+drumsButton.addEventListener('click',navigation.displayDrums);
