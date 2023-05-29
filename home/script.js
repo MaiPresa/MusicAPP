@@ -1,7 +1,7 @@
 import { goToBttn } from "../scripts/script.js";
 
 document.getElementById("homeDrumBttn").addEventListener("click", (event) => {
-    goToBttn("./../tambor/index.html");
+    goToBttn("./../tambor/drum.html");
 });
 
 
