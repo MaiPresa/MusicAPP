@@ -1,3 +1,4 @@
+import { goToBttn } from "../../scripts/script.js";
 let header = document.querySelector('header');
 
 navigation = {
@@ -81,15 +82,28 @@ navigation = {
         // let drumsContainer = document.getElementbyId('drumContainer');
         // drumsContainer.style.display = 'block';
     }
-
 };
+
 //creamos la estructura de la página
 navigation.build();
 
 //elementos con llamada a la acción
 let pianoButton = document.getElementById("navButtonPiano");
 let drumsButton = document.getElementById("navButtonDrums");
-let userButton = document.getElementById("navButtonUser");
+// let userButton = document.getElementById("navButtonUser");
 
-pianoButton.addEventListener('click',navigation.displayPiano);
-drumsButton.addEventListener('click',navigation.displayDrums);
+
+
+drumsButton.addEventListener("click", (event) => {
+    goToBttn("./../tambor/drum.html");
+});
+
+pianoButton.addEventListener("click", (event) => {
+    goToBttn("./../piano/index.html");
+});
+
+
+
+
+// pianoButton.addEventListener('click',navigation.displayPiano);
+// drumsButton.addEventListener('click',navigation.displayDrums);
