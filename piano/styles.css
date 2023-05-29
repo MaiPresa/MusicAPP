@@ -1,21 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
+main {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
   background-color: #191227;
+  box-sizing: border-box;
   /* background-image: linear-gradient( #191227 60%, 
   #122938, #1B8367, #0CEF8B); */
 }
-
-main {margin-bottom: 40px;}
 
 .keyboardContainer {
   width: 460px;
@@ -24,8 +22,6 @@ main {margin-bottom: 40px;}
   border-color: #0CEF8B;
   border-style: solid;
   margin: auto;
-  margin-top: 100px;
-  margin-bottom: 50px;
   position: relative;
 }
 .keys {
@@ -110,6 +106,7 @@ main {margin-bottom: 40px;}
 @media (min-width: 375px) and (max-width: 768px) {
   .keyboardContainer {
     width: 342px;
+    margin-top: 150px;
   }
   .whitekey {
       width: 48px;
@@ -135,10 +132,10 @@ main {margin-bottom: 40px;}
   .blackkey:nth-child(5) {left: 275px;}
 }
 
-@media (min-width: 375px) and (orientation: landscape) {
+@media (min-width: 375px) and (max-width: 768px) and (orientation: landscape) {
   .keyboardContainer {
     margin-left: 145px;
-    margin-bottom: 70px;
+    margin-top: 0;
   }
 }
 
