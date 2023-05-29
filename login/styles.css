@@ -1,5 +1,6 @@
 body{
     background-color: #291C45;
+        
 }
 
 h2{
@@ -9,19 +10,23 @@ h2{
 
 
 
-/* Bordered form */
+
 form {
     border: 3px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
   
-  /* Full-width inputs */
   input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-flex;
-    border: 1px solid #ccc;
+    border-left: 5px solid #82C4AA;
     box-sizing: border-box;
+    
     
 
   }
@@ -33,10 +38,17 @@ form {
     background-color:#96E5C3;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 20px 0px 40px 0px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    margin: auto;
+   
   }
   
 
@@ -45,13 +57,13 @@ form {
   }
 
   .play{
-    size: 2px;
+    width: 20px;
   }
   
-  ul{
+  .loginRegistro{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     gap: 1%;
     list-style-type: none;
     color: white;
