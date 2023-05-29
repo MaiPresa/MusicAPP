@@ -5,7 +5,7 @@ navigation = {
     build: function(){
         //creo el link y logo, y lo inserto
         let logo = document.createElement('img');
-        logo.src = 'img/logo.svg';
+        logo.src = '../../menu/img/logo.svg';
         logo.setAttribute("id", "logo");
         header.appendChild(logo);
 
@@ -28,9 +28,9 @@ navigation = {
             let navListItem = document.createElement('li');
             navList.appendChild(navListItem);
             switch(i){
-                case 0 : navListItem.innerHTML += '<button id="navButtonPiano"><img src="img/navIconPiano.svg" alt="Botón Piano"></button><label>Piano</label>';break;
-                case 1 : navListItem.innerHTML += '<button id="navButtonDrums"><img src="img/navIconDrums.svg" alt="Botón Batería"></button><label>Batería</label>';break;
-                case 2 : navListItem.innerHTML += '<button id="navButtonUser"><img src="img/navIconUser.svg" alt="Botón Usuario"></button><label>Usuario</label>';break;
+                case 0 : navListItem.innerHTML += '<button id="navButtonPiano"><img src="../../menu/img/navIconPiano.svg" alt="Botón Piano"></button><label>Piano</label>';break;
+                case 1 : navListItem.innerHTML += '<button id="navButtonDrums"><img src="../../menu/img/navIconDrums.svg" alt="Botón Batería"></button><label>Batería</label>';break;
+                case 2 : navListItem.innerHTML += '<button id="navButtonUser"><img src="../../menu/img/navIconUser.svg" alt="Botón Usuario"></button><label>Usuario</label>';break;
             }
         }
 
