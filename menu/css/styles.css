@@ -4,6 +4,7 @@ body,header {
 }
 
 header {
+    top:0;
     background-color: #191227;
     width: 100%;
     display: flex;
