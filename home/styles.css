@@ -4,12 +4,8 @@ body {
     background-color: #191227;
 }
 
-header {
-    height: 238px;
-}
-
 main {
-    margin-top: 230px;
+    margin-top: 240px;
     color: white;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
@@ -81,13 +77,18 @@ main {
     margin-bottom: 60px;
 }
 
+.homeHalfBorder {
+    margin: 0;
+    display: none;
+}
 
 /* ----- IMG STYLES ----- */
 
 img[src*="bateria"], img[src*="piano"] {
     max-width: 141px;
     max-height: 141px;
-    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .homeFlex:hover img[src*="bateria"], .homeFlex:hover img[src*="piano"] {
@@ -110,10 +111,70 @@ img[src*="bateria"], img[src*="piano"] {
 }
 
 @media (min-width: 375px) {
-    img[src*="bateria"], img[src*="piano"] {
-        max-width: none;
-        max-height: 141px;
-        width: auto;
+    .homePianoContainer, .homeDrumContainer {
         flex-grow: 1;
+    }
+}
+
+@media (min-width: 767px) {
+    main {
+        margin-left: 0px;
+        margin-top: 184px;
+    }
+
+    header {
+        position: absolute!important;
+
+    }
+
+    .homeFlex {
+        gap: 48px;
+    }
+
+    .homeContainerNoneT {
+        border-top: none;
+        padding-top: 2px;
+    }
+
+    .homeContainerNoneB {
+        border-bottom: none;
+        padding-bottom: 2px;
+    }
+
+    .homeHalfBorder {
+        display: block;
+        width: 45%;
+        max-width: 240px;
+        background-color: #0CEF8B;
+        border-color: #0CEF8B;
+    }
+
+    .homeHalfBorderR {
+        margin-left: auto;
+    }
+
+    .homeText {
+        font-size: 2em;
+        max-width: 20ch;
+    }
+
+    img[src*="bateria"], img[src*="piano"] {
+        max-width: 230px;
+        max-height: 230px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .homeMarginLAuto {
+        margin-left: auto;
+    }
+
+    .homeTitles {
+        font-size: 2em;
+    }
+
+    .homeTextCenter {
+        font-size: 2.2em;
+        margin-bottom: 16px;
     }
 }
