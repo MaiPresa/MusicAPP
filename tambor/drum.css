@@ -7,7 +7,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 410px;
-    margin-top: 230px;
+    margin-top: 238px;
 }
 .lettersDrums {
     display: flex;
@@ -169,21 +169,75 @@ body {
 .Cymbals:hover .CymbalsMedium {
     background-color: #ffffff; 
 }
+
+
+/*versión móvil*/
+
 @media (min-width: 376px) and (orientation: landscape) {
     .DrumContainer {
-        margin-top: 0px;
-        margin-left: 145px;
-        width: 370px;
-        height: 140px;
+        margin-top: 10px;
+        margin-left: 220px;
+        width: 447px;
+        height: 360px;
     }
     .BigDrumsContainer {
     display: flex;
     justify-content: space-between;
-    height: 180px;
+    align-items: center;
+    height: 130px;
     width: 370px;
+    margin-bottom: 0px;
     }
     .MainDrum {
-    margin-top: 40px;
-    }
+        margin-top: 20px;
+        }
 
 }
+
+/* medida táblet 
+@media (min-width: 770px){.imgDomboom {visibility: hidden;}}
+*/
+
+/*@media (min-width: 769px) and (max-width: 927px){
+    .DrumContainer {
+        margin-top: 10px;
+        margin-left: 220px;
+        width: 447px;
+        height: 360px;
+    }
+    .BigDrumsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: 370px;
+    margin-bottom: 0px;
+    }
+    .MainDrum {
+        margin-top: 20px;
+        }
+    }
+  /* medida pc */
+  
+ /* @media (min-width: 928px) {
+    .DrumContainer {
+        width: 762px;
+        height: 677px
+        margin-top: 332px;
+
+    }
+    .CymbalsContainer { 
+        height: 212px;
+        width: 570px; 
+    }
+    .Cymbals {
+        width: 50% ;
+        height: 50%;
+    }   
+        .ondas1 {
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+}*/
