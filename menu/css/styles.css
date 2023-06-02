@@ -12,6 +12,7 @@ header {
     align-items: center;
     padding-top: 45px;
     position: fixed;
+    z-index:3;
 }
 
 header img#logo {
@@ -47,23 +48,94 @@ header nav#navigation ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} 
 
 header nav#navigation ul li button {
-    background-color: #191227;
+    background-color:#191227;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
     border: #0CEF8B 1px solid;
     width: 52px;
     height: 52px;
     border-radius: 50%;
 }
+header nav#navigation ul li button:hover {
+    background-color: #514865;
+}
 
-header nav#navigation ul li button img {
-    width:25px;
+#navButtonPiano{
+    background: url(../img/navIconPiano.svg);
+}
+#navButtonPiano:hover{
+    background: url(../img/navIconPianoHover.svg);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #ffffff 1px solid;
+}
+
+#navButtonDrums{
+    background: url(../img/navIconDrums.svg);
+}
+#navButtonDrums:hover{
+    background: url(../img/navIconDrumsHover.svg);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: #ffffff 1px solid;
+}
+
+#navButtonUser{
+    background: url(../img/navIconUser.svg);
+    z-index: 3;
+}
+#navButtonUser:hover{
+    background: url(../img/navIconUserHover.svg);
+    border: #ffffff 1px solid;
+}
+
+#navButtonUser:hover ~ #dropdownContent {
+    animation: dropdownMenu 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+#navButtonUser:hover ~ #dropdownContent a {
+    display: flex;
+    animation: dropdownMenuLinks 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #514865;
+    top: 155px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    border: #0CEF8B 1px solid;
+}
+
+#dropdownContent a {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 8px;
+    background-color: #514865;
+    border-right: #0CEF8B 1px solid;
+}
+
+
+#dropdownContent a:hover{
+    color: #0CEF8B;
+    background-color:#756c8a
 }
 
 header nav#navigation ul li label {
     color: #FFFFFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
 }
 
@@ -84,24 +156,6 @@ header div:nth-of-type(3) {
     width: 35%;
 }
 
-@media screen and (max-width:767px){
-    header.shrink {
-        animation: shrinkNavbar 0.4s ease-in-out;
-        animation-fill-mode: forwards;
-    }
-    header img#logo.shrink,  header div:nth-of-type(1).shrink, header div:nth-of-type(3).shrink {
-        animation: disappearNavbar 0.4s ease-in-out;
-        animation-fill-mode: forwards;
-    }
-    header nav#navigation ul.shrink {
-        animation: disappearBorder 0.4s ease-in-out;
-        animation-fill-mode: forwards
-    }
-    header div:nth-of-type(2).shrink {
-        animation: adjustWidth 0.4s ease-in-out;
-        animation-fill-mode: forwards
-    }
-}
 
 @media screen and (orientation: landscape) and (max-width:767px){
     header {
@@ -167,48 +221,32 @@ header div:nth-of-type(3) {
         height: 15px;
         width: 25%;
     }
+    #dropdownContent {
+        top:85px;
+    }
 
     
 }
 
-@keyframes shrinkNavbar{
+@keyframes dropdownMenu {
     0%{
-        padding-top: 45px;
-    }
-    100%{
+        height: 0;
         padding-top: 0;
     }
-}
-
-@keyframes disappearNavbar{
-    0%{
-        opacity:100%;
-        transform: scale(1,1);
+    50%{
+        height: 35px;
+        padding-top: 40px;
     }
     100%{
-        height: 0;
-        opacity: 0%;
-        transform: scale(1,0);
+        padding-top: 40px;
+        height: 73px;
     }
 }
-
-@keyframes disappearBorder{
+@keyframes dropdownMenuLinks {
     0%{
-        width: 75%;
+        width: 0;
     }
     100%{
-        border-right:none;
-        border-left:none;
-    }
-}
-
-@keyframes adjustWidth {
-    0%{
-        margin: 0 10% 0 15%;
-    }
-    100%{
-        margin: 0 10% 0 10%;
-        border-right:none;
-        border-left:none;
+        width:100px;
     }
 }
