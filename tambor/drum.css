@@ -6,8 +6,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 410px;
-    margin-top: 238px;
+    margin-top: 250px;
 }
 .lettersDrums {
     display: flex;
@@ -150,9 +149,6 @@ body {
 .DrumbMainDown {
     margin-top: 70px;
 }
-.LogoDrum {
-    margin-top: 0;
-}
 /*Hover de los discos*/
 .Cymbals:hover > * {
     border-left: #ffffff solid;
@@ -173,71 +169,50 @@ body {
 
 /*versión móvil*/
 
-@media (min-width: 376px) and (orientation: landscape) {
+@media (min-width: 376px) and (orientation: landscape) and (max-width: 767px)  {
     .DrumContainer {
         margin-top: 10px;
-        margin-left: 220px;
-        width: 447px;
-        height: 360px;
+        margin-left: 180px;
+        width: 446px;
+        height: 340px;
     }
     .BigDrumsContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 130px;
-    width: 370px;
+    width: 380px;
     margin-bottom: 0px;
     }
     .MainDrum {
         margin-top: 20px;
-        }
 
+    }
+    
 }
 
-/* medida táblet 
-@media (min-width: 770px){.imgDomboom {visibility: hidden;}}
-*/
 
-/*@media (min-width: 769px) and (max-width: 927px){
+/* versión tablet */
+@media (min-width: 768px) and (max-width: 927px) {
     .DrumContainer {
-        margin-top: 10px;
-        margin-left: 220px;
-        width: 447px;
-        height: 360px;
+        margin-top: 180px;
     }
-    .BigDrumsContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 130px;
-    width: 370px;
-    margin-bottom: 0px;
-    }
-    .MainDrum {
+    .CymbalsContainer, .BigDrumsContainer, .SmallDrumsContainer {
+        transform: scale(1.2);
         margin-top: 20px;
-        }
-    }
+    } 
+}
+
   /* medida pc */
   
- /* @media (min-width: 928px) {
+ @media (min-width: 928px) {
     .DrumContainer {
-        width: 762px;
-        height: 677px
-        margin-top: 332px;
-
-    }
-    .CymbalsContainer { 
-        height: 212px;
-        width: 570px; 
-    }
-    .Cymbals {
-        width: 50% ;
-        height: 50%;
-    }   
-        .ondas1 {
-            width: 90%;
-            height: 90%;
-        }
+        margin-top: 180px;
     }
 
-}*/
+    .CymbalsContainer, .BigDrumsContainer, .SmallDrumsContainer {
+        transform: scale(1.3);
+        margin-top: 25px;
+
+    }
+ }

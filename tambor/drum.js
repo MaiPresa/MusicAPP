@@ -8,13 +8,13 @@ const drumKit = {
     'k': 'tom2',
     'l': 'tom3'
 };
-
 const $drums = document.querySelectorAll('.sound');
 
 $drums.forEach(drum =>
     drum.addEventListener('click', event => {
         const drumElement = event.target.closest('.sound');
         const drumId = drumElement.id;
+        console.log(drumElement)
         const audio = new Audio(`./sounds/${drumId}.wav`);
         audio.play();
     })
@@ -30,6 +30,7 @@ document.addEventListener('keydown', event => {
         audio.play();
     }
 });
+
 
 // document.addEventListener('keyup', event => {
 //     const drumId = drumKit[event.key.toLowerCase()];
