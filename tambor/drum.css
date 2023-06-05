@@ -6,8 +6,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 410px;
-    margin-top: 230px;
+    margin-top: 250px;
 }
 .lettersDrums {
     display: flex;
@@ -150,9 +149,6 @@ body {
 .DrumbMainDown {
     margin-top: 70px;
 }
-.LogoDrum {
-    margin-top: 0;
-}
 /*Hover de los discos*/
 .Cymbals:hover > * {
     border-left: #ffffff solid;
@@ -169,21 +165,54 @@ body {
 .Cymbals:hover .CymbalsMedium {
     background-color: #ffffff; 
 }
-@media (min-width: 376px) and (orientation: landscape) {
+
+
+/*versión móvil*/
+
+@media (min-width: 376px) and (orientation: landscape) and (max-width: 767px)  {
     .DrumContainer {
-        margin-top: 0px;
-        margin-left: 145px;
-        width: 370px;
-        height: 140px;
+        margin-top: 10px;
+        margin-left: 180px;
+        width: 446px;
+        height: 340px;
     }
     .BigDrumsContainer {
     display: flex;
     justify-content: space-between;
-    height: 180px;
-    width: 370px;
+    align-items: center;
+    height: 130px;
+    width: 380px;
+    margin-bottom: 0px;
     }
     .MainDrum {
-    margin-top: 40px;
+        margin-top: 20px;
+
+    }
+    
+}
+
+
+/* versión tablet */
+@media (min-width: 768px) and (max-width: 927px) {
+    .DrumContainer {
+        margin-top: 180px;
+    }
+    .CymbalsContainer, .BigDrumsContainer, .SmallDrumsContainer {
+        transform: scale(1.2);
+        margin-top: 20px;
+    } 
+}
+
+  /* medida pc */
+  
+ @media (min-width: 928px) {
+    .DrumContainer {
+        margin-top: 180px;
     }
 
-}
+    .CymbalsContainer, .BigDrumsContainer, .SmallDrumsContainer {
+        transform: scale(1.3);
+        margin-top: 25px;
+
+    }
+ }
