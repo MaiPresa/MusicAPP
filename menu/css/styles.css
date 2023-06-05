@@ -163,7 +163,6 @@ header div:nth-of-type(3) {
 }
 
 @media screen and (orientation: portrait) and (max-width:767px){
-
     #dropdownContent {
         position: absolute;
         background-color: #514865;
@@ -184,7 +183,6 @@ header div:nth-of-type(3) {
         background-color: #514865;
         border-right: #0CEF8B 1px solid;
     }
-    
     
     #dropdownContent a:hover{
         color: #0CEF8B;
@@ -211,13 +209,16 @@ header div:nth-of-type(3) {
         margin:0;
         justify-content: center;
     }
+
     header img#logo {
         width: 111px;
         padding-left: 20px;
     }
+
     header div:nth-of-type(1) {
         margin: 10px 10% 0 0;
     }
+
     header nav#navigation ul {
         width: 80%;
         padding: 10px 10%;
@@ -226,14 +227,15 @@ header div:nth-of-type(3) {
         flex-direction: column;
         gap:4vh;
     }
+
     header div:nth-of-type(2) {
         height: 5px;
         border-left:none;
     }
+
     header div:nth-of-type(3) {
         border-right: none;
     }
-    
 
     #dropdownContent {
         background-color: #514865;
@@ -246,6 +248,7 @@ header div:nth-of-type(3) {
         z-index: 2;
         border: #0CEF8B 1px solid;
     }
+
     #dropdownContent a{
         display: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -280,22 +283,27 @@ header div:nth-of-type(3) {
         align-content: center;
         padding-top: 45px;
     }
+
     header div:nth-of-type(1) {
         order:-1;
         margin: 0 10% 0 10%;
         width: 80%;
         height: 1px;
     }
+
     header nav#navigation {
         width: 40%;
     }
+
     header nav#navigation ul {
         border-right: none;
     }
+
     header div:nth-of-type(2) {
         margin: 0 15% 0 15%;
         width: 60%;
     }
+
     header div:nth-of-type(3) {
         margin: 0 50% 0 20%;
         padding: 0;
@@ -304,11 +312,10 @@ header div:nth-of-type(3) {
         height: 15px;
         width: 30%;
     }
+
     #dropdownContent {
         top:85px;
     }
-
-    
 }
 
 @keyframes dropdownMenu {
