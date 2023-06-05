@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./login/styles.css">
 </head>
 <body>
   <main>
   
-  <img src="./Images/doommockup.png" alt="MobileViev" class="Mockup">
+  <img src="./login/Images/doommockup.png" alt="MobileViev" class="Mockup">
   
   <form>
    
         <div class="imgcontainer">
-          <img src="./Images/logo.png" alt="Logo" class="Logo">
+          <img src="./login/Images/logo.png" alt="Logo" class="Logo">
         </div>
 
       <div class="all">
@@ -33,7 +33,7 @@
           
               <input type="text" placeholder="email_" required>
       
-              <button class="registerButton">Entrar<img class="play" src="./Images/play.svg"></button>
+              <button class="registerButton">Entrar<img class="play" src="./login/Images/play.svg"></button>
             </div>
       
             <div id="Registrarse" class="tabcontent">
@@ -44,20 +44,26 @@
 
               <input type="password" placeholder="contraseña_" required>
       
-              <button class="registerButton">Entrar<img class="play" src="./Images/play.svg"></button>
+              <button class="registerButton">Entrar<img class="play" src="./login/Images/play.svg"></button>
             </div>
           </div>
 
             <hr>
             <p class="pRegister">¿No te interesa registrarte?</p>
             
-            <button class="guestsButton" onclick="">Entrar como invitado</button>
+            <button class="guestsButton"  id="guestGoTo" onclick="">Entrar como invitado</button>
             <p class="pCondeuso">Al iniciar sesión, acepta nuestras Condiciones de Uso y Política de Privacidad </p>
         </div>
       </div>
         
   </form>
 </main>
-  <script src="script.js"></script>
+  <script src="./login/script.js"></script>
+  <script type="module">
+    import { goToBttn } from "./scripts/script.js";
+    document.getElementById("guestGoTo").addEventListener("click", () => {
+    goToBttn("./home/index.html");
+  });
+  </script>
 </body>
 </html>
