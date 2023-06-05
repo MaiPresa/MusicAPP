@@ -1,0 +1,209 @@
+/*@media only screen and (min-width: 600px) {
+  body {
+    display: none;
+  }
+}*/
+
+
+
+
+
+
+
+body{
+  
+    background-color: #191227;
+    /*-webkit-background-: linear-gradient(#291C45 75%, #82C4AA);
+    */
+           
+}
+
+
+
+
+
+form {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    max-width: 324px;
+    margin: auto;
+    
+  
+  }
+  
+  .Mockup{
+    display: none;
+  }
+
+  .tab {
+    overflow: hidden;
+    background-color: #28252e;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #f1f1f1;
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  .tab button.active {
+    background-color: #28252e;
+    color: #ddd;
+    
+  }
+
+  .tabcontent {
+    
+    padding: 10px 12px 40px 12px;
+    border-top: none;
+    background-color: #28252e;
+    
+  }
+
+  #Registrarse{
+    display: none;
+  }
+  
+ 
+  
+  input[type=text], input[type=password] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-flex;
+    border-left: 4px solid #0CEF8B;
+    
+    
+  }
+
+   
+
+  .registerButton {
+    background-color:#0CEF8B;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 18px;
+    margin: auto;
+   
+  }
+  
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .play{
+    width: 20px;
+  }
+
+  hr{
+    border-top: 1px solid #0CEF8B;
+    width: 86%;
+  }
+  
+  .guestsButton {
+    background-color: transparent;
+    color: #0CEF8B;
+    padding: 14px 20px;
+    margin: 20px 0px 40px 0px;
+    border: #0CEF8B;
+    border-style: double;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    margin: auto;
+   
+  }
+
+.pRegister{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pCondeuso{
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+  .imgcontainer {
+    text-align: center;
+    margin: 76px 0 12px 0;
+  }
+  
+
+  
+
+  .container {
+    padding: 30px;
+    padding-bottom: 12px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    div.all {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+    }
+  
+    .Logo{
+  
+      height: auto;
+      
+      }
+  
+    .Mockup{
+  
+        height: 70vh;
+        display: initial;
+        
+        
+        
+      }
+  
+    main{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    form{
+      margin: 0;
+    }
+    }
