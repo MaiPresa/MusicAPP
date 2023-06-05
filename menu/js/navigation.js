@@ -29,7 +29,7 @@ navigation = {
             switch(i){
                 case 0 : navListItem.innerHTML += '<button id="navButtonPiano"></button><label>Piano</label>';break;
                 case 1 : navListItem.innerHTML += '<button id="navButtonDrums"></button><label>Batería</label>';break;
-                case 2 : navListItem.innerHTML += '<button id="navButtonUser"></button><label>Usuario</label><section id="dropdownContent"><a href="../../login/index.html">Iniciar Sesión</a><a href="https://factoriaf5.org/">Download</a></section>';break;
+                case 2 : navListItem.innerHTML += '<button id="navButtonUser"></button><label>Usuario</label><section id="dropdownContent"><a href="../index.html">Iniciar Sesión</a><a href="https://factoriaf5.org/">Download</a></section>';break;
             }
         }
 
