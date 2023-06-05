@@ -11,8 +11,6 @@ main {
   font-family: Arial, sans-serif;
   background-color: #191227;
   box-sizing: border-box;
-  /* background-image: linear-gradient( #191227 60%, 
-  #122938, #1B8367, #0CEF8B); */
 }
 
 .keyboardContainer {
@@ -82,7 +80,7 @@ main {
   background-color: #fffffd;
   border-color: #fffffd;
 }
-/* Posición de las teclas negras */
+
 .blackkey:nth-child(1) {left: 38px;}
 
 .blackkey:nth-child(2) {left: 113px;}
@@ -100,9 +98,7 @@ main {
   justify-content: center;
 }
 
-/* Medidas responsive 1- móvil 2- tablet 3- Pc */
 
-/* medida móvil */
 @media (min-width: 375px) and (max-width: 768px) {
   .keyboardContainer {
     width: 342px;
@@ -139,9 +135,7 @@ main {
   }
 }
 
-/* medida táblet 
-@media (min-width: 770px){.imgDomboom {visibility: hidden;}}
-*/
+
 
 @media (min-width: 769px) and (max-width: 927px){
   .borderPiano {
@@ -157,9 +151,9 @@ main {
   }
 }
 
-/* medida pc */
 @media (min-width: 928px) {
   .keyboardContainer {
+    margin-top: 100px;
     width: 670px;
     border-radius: 30px;
   }
