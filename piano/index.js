@@ -31,11 +31,9 @@ document.addEventListener("keydown", (event) => {
   const notePressed = keyboardNotes[event.key.toLowerCase()]
 
   if (notePressed) {
-    // Mudar cor background
     const $noteElement = document.querySelector(`[data-music-note="${notePressed}"]`)
     $noteElement.classList.add("clicked")
 
-    // Tocar audio
     const audio = new Audio(`./piano-keys/${notePressed}.wav`)
     audio.play()
   }
