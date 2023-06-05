@@ -11,8 +11,6 @@ main {
   font-family: Arial, sans-serif;
   background-color: #191227;
   box-sizing: border-box;
-  /* background-image: linear-gradient( #191227 60%, 
-  #122938, #1B8367, #0CEF8B); */
 }
 
 .keyboardContainer {
@@ -56,7 +54,7 @@ main {
 .whitekey:last-child {
   border-radius: 0 8.5px 8.5px 0;
 }
-.whitekey:hover {
+.whitekey:active {
   background-color: #fffffdb4;
   border-color: #fffffd59;
 }
@@ -78,11 +76,11 @@ main {
 
   cursor: pointer;
 }
-.blackkey:hover {
+.blackkey:active {
   background-color: #fffffd;
   border-color: #fffffd;
 }
-/* Posición de las teclas negras */
+
 .blackkey:nth-child(1) {left: 38px;}
 
 .blackkey:nth-child(2) {left: 113px;}
@@ -100,9 +98,7 @@ main {
   justify-content: center;
 }
 
-/* Medidas responsive 1- móvil 2- tablet 3- Pc */
 
-/* medida móvil */
 @media (min-width: 375px) and (max-width: 768px) {
   .keyboardContainer {
     width: 342px;
@@ -132,16 +128,13 @@ main {
   .blackkey:nth-child(5) {left: 275px;}
 }
 
+
 @media (min-width: 375px) and (max-width: 768px) and (orientation: landscape) {
   .keyboardContainer {
     margin-left: 145px;
     margin-top: 0;
   }
 }
-
-/* medida táblet 
-@media (min-width: 770px){.imgDomboom {visibility: hidden;}}
-*/
 
 @media (min-width: 769px) and (max-width: 927px){
   .borderPiano {
@@ -157,7 +150,6 @@ main {
   }
 }
 
-/* medida pc */
 @media (min-width: 928px) {
   .keyboardContainer {
     width: 670px;
