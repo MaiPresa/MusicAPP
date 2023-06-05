@@ -54,7 +54,7 @@ main {
 .whitekey:last-child {
   border-radius: 0 8.5px 8.5px 0;
 }
-.whitekey:hover {
+.whitekey:active {
   background-color: #fffffdb4;
   border-color: #fffffd59;
 }
@@ -76,7 +76,7 @@ main {
 
   cursor: pointer;
 }
-.blackkey:hover {
+.blackkey:active {
   background-color: #fffffd;
   border-color: #fffffd;
 }
