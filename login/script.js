@@ -1,18 +1,3 @@
-/*let tabs = document.querySelectorAll(".tabs h3");
-let tabContents = document.querySelectorAll(".tab-content div");
-
-tabs.forEach ((tab, index)) => {
-    tab.addEventListener("click", () => {
-        tabContents.forEach((content) => {
-            content.classList.remove("active");
-        });
-        tabs.forEach((tab) => {
-            tab.classList.remove("active");
-        });
-        tabContents[index].classList.add("active");
-        tabs[index].classList.add("active");
-    });
-};*/
 function clickHandle(evt, action) {
     let i, tabcontent, tablinks;
   
@@ -31,4 +16,4 @@ function clickHandle(evt, action) {
     // Display the clicked tab and set it to active.
     document.getElementById(action).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+  };
