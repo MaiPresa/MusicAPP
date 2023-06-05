@@ -3,35 +3,9 @@
     display: none;
   }
 }*/
-@media screen and (max-width: 600px) {
-  div.mockup {
-    display: none;
-  }
-}
 
-@media screen and (min-width: 600px) {
-  div.all {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-  }
 
-  .Logo{
-
-    height: auto;
-    
-    }
-
-  .Mockup{
-
-      height: auto;
-      position: relative; right: 300px;
-      
-      max-width: 600%;
-      
-    }
-  }
 
 
 
@@ -49,7 +23,7 @@ body{
 
 
 form {
-    border: 3px solid #f1f1f1;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,10 +34,14 @@ form {
   
   }
   
+  .Mockup{
+    display: none;
+  }
 
   .tab {
     overflow: hidden;
-    background-color: #9689b2;
+    background-color: #28252e;
+    color: #f1f1f1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,6 +56,7 @@ form {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    color: #f1f1f1;
   }
 
   .tab button:hover {
@@ -85,16 +64,21 @@ form {
   }
 
   .tab button.active {
-    background-color: #9689b2;
-    opacity: 50%;
+    background-color: #28252e;
+    color: #ddd;
+    
   }
 
   .tabcontent {
-    display: none;
+    
     padding: 10px 12px 40px 12px;
     border-top: none;
-    background-color: #9689b2;
-    opacity: 50%;
+    background-color: #28252e;
+    
+  }
+
+  #Registrarse{
+    display: none;
   }
   
  
@@ -138,7 +122,7 @@ form {
 
   hr{
     border-top: 1px solid #0CEF8B;
-    width: fit-content;
+    width: 86%;
   }
   
   .guestsButton {
@@ -188,4 +172,38 @@ form {
     padding-bottom: 12px;
   }
   
+  @media screen and (min-width: 600px) {
+    div.all {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
   
+    }
+  
+    .Logo{
+  
+      height: auto;
+      
+      }
+  
+    .Mockup{
+  
+        height: 70vh;
+        display: initial;
+        
+        
+        
+      }
+  
+    main{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    form{
+      margin: 0;
+    }
+    }
