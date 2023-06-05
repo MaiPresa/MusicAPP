@@ -8,28 +8,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="action_page.php" method="post">
+    
+  <form>
         <div class="imgcontainer">
           <img src="./Images/logo.png" alt="Logo" class="Logo">
         </div>
-      
-        <div class="container">
 
-          <h2>¡Hola de nuevo!</h2>
-          <input type="text" placeholder="usuario_" required>
+      <div class="all">
+        <div class="mockup">
+          <img src="./Images/doommockup.png" alt="MobileViev" class="Mockup">
+        </div>
+        <div class="desktop">
+          <div class="container">
+            <div class="tab">
+              <button class="tablinks" onclick="clickHandle(event, 'Login')">Login</button>
+              <button class="tablinks" onclick="clickHandle(event, 'Registrarse')">Registrarse</button>
+            </div>
+
+            <div id="Login" class="tabcontent">
+              <input type="text" placeholder="usuario_" required>
       
           
-          <input type="password" placeholder="contraseña_" required>
+              <input type="text" placeholder="email_" required>
       
-          <button class="registerButton" onclick="#"><img class="play" src="./Images/play.svg">Entra</button>
-          <hr>
-          <ul class="loginRegistro">
-            <li>¿No tienes cuenta?</li>
-            <li> <a href="#" class="registro">Regístrate</li>
-        
-          </ul>
+              <button class="registerButton">Entrar<img class="play" src="./Images/play.svg"></button>
+            </div>
       
+            <div id="Registrarse" class="tabcontent">
+              <input type="text" placeholder="usuario_" required>
+      
+          
+              <input type="text" placeholder="correo_" required>
+
+              <input type="password" placeholder="contraseña_" required>
+      
+              <button class="registerButton">Entrar<img class="play" src="./Images/play.svg"></button>
+            </div>
+          </div>
+
+            <hr>
+            <p class="pRegister">¿No te interesa registrarte?</p>
+            
+            <button class="guestsButton" onclick="">Entrar como invitado<img class="play" src="./Images/play.svg"></button>
+            <p class="pCondeuso">Al iniciar sesión, acepta nuestras Condiciones de Uso y Política de Privacidad </p>
+        </div>
+      </div>
         
-      </form>
+  </form>
+  <script src="script.js"></script>
 </body>
 </html>
